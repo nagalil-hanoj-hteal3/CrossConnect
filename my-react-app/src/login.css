@@ -1,0 +1,201 @@
+.login {
+  background-color: #661515;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.login .loginbackground {
+  height: 100vh;
+  left: 80%;
+  object-fit: cover;
+  position: absolute;
+  /* top: 0; */
+  width: 100%;
+}
+
+.login .sign-up {
+  height: 74px;
+  left: 348px;
+  position: absolute;
+  top: 806px;
+  width: 201px;
+}
+
+.login .overlap-group {
+  background-color: #ffd9ed;
+  height: 74px;
+  position: relative;
+  width: 199px;
+}
+
+.login .text-wrapper {
+  color: #000000;
+  font-family: "Cambo-Regular", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  left: 28px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 14px;
+  white-space: nowrap;
+}
+
+.login .login-button {
+  all: unset;
+  box-sizing: border-box;
+  height: 74px;
+  left: 57px;
+  position: absolute;
+  top: 806px;
+  width: 201px;
+}
+
+.login .div {
+  color: #000000;
+  font-family: "Cambo-Regular", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  left: 50px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 14px;
+  white-space: nowrap;
+}
+
+.login .text-wrapper-2 {
+  color: #000000;
+  font-family: "Arimo-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 365px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 700px;
+  white-space: nowrap;
+}
+
+.login .remember {
+  height: 40px;
+  left: 71px;
+  position: absolute;
+  top: 695px;
+  width: 216px;
+}
+
+.login .rectangle {
+  background-color: #ffffff;
+  border: 2px solid;
+  border-color: #000000;
+  height: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 40px;
+}
+
+.login .text-wrapper-3 {
+  color: #000000;
+  font-family: "Arimo-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 55px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 6px;
+  white-space: nowrap;
+}
+
+.login .password {
+  height: 102px;
+  left: 57px;
+  position: absolute;
+  top: 533px;
+  width: 494px;
+}
+
+.login .overlap {
+  background-color: #f2f2f2;
+  border-radius: 40px;
+  height: 74px;
+  left: 0;
+  position: absolute;
+  top: 28px;
+  width: 490px;
+}
+
+.login .text-wrapper-4 {
+  color: #bdbdbd;
+  font-family: "Cambo-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 23px;
+  white-space: nowrap;
+}
+
+.login .text-wrapper-5 {
+  color: #000000;
+  font-family: "Arimo-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.login .email-address {
+  height: 102px;
+  left: 57px;
+  position: absolute;
+  top: 365px;
+  width: 494px;
+}
+
+.login .text-wrapper-6 {
+  color: #bdbdbd;
+  font-family: "Cambo-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 23px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 24px;
+  white-space: nowrap;
+}
+
+.login .text-wrapper-7 {
+  color: #000000;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  left: 90px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 190px;
+  white-space: nowrap;
+}
+
+.login .text-wrapper-8 {
+  color: #000000;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 64px;
+  font-weight: 400;
+  left: 128px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 21px;
+}
