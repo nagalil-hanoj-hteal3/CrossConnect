@@ -1,42 +1,52 @@
 .login {
-  background-color: #661515;
+  /* background-color: #661515; */
   height: 100vh;
   position: relative;
-  width: 50%;
+  width: 61%;
   margin-top: -2%;
   margin-left: -1%;
 }
 
 .login .loginbackground {
-  height: 100vh;
+  height: 101vh;
   left: 80%;
   object-fit: cover;
   position: absolute;
   /* top: 0; */
-  width: 100%;
+  width: 87.3%;
 }
 
 .login .sign-up {
-  height: 74px;
-  left: 348px;
+  height: 70px;
+  background-color: #ffd9ed;
+  left: 41%;
   position: absolute;
-  top: 806px;
-  width: 201px;
+  top: 85%;
+  width: 36%;
+  border: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.login .sign-up:hover {
+  /* background-color: #4384e5; Change the background color on hover */
+  transform: scale(1.1); /* Scale up on hover */
+  transition: transform 0.3s; /* Add a smooth transition for the scale */
+  box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 .login .overlap-group {
   background-color: #ffd9ed;
-  height: 74px;
+  height: 68px;
   position: relative;
-  width: 199px;
+  width: 80%;
 }
 
 .login .text-wrapper {
   color: #000000;
-  font-family: "Cambo-Regular", Helvetica;
+  font-family: "Cambo", serif;
   font-size: 40px;
   font-weight: 400;
-  left: 28px;
+  left: 8%;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
@@ -44,22 +54,37 @@
   white-space: nowrap;
 }
 
+.login .overlap-group2 {
+  background-color: #ffd9ed;
+  height: 70px;
+  position: relative;
+  width: 100%;
+}
+
 .login .login-button {
   all: unset;
   box-sizing: border-box;
-  height: 74px;
-  left: 57px;
+  /* height: 60px; */
+  left: 3%;
   position: absolute;
-  top: 806px;
-  width: 201px;
+  top: 85%;
+  width: 32%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.login .login-button:hover {
+  /* background-color: #4384e5; Change the background color on hover */
+  transform: scale(1.1); /* Scale up on hover */
+  transition: transform 0.3s; /* Add a smooth transition for the scale */
+  box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 .login .div {
   color: #000000;
-  font-family: "Cambo-Regular", Helvetica;
+  font-family: "Cambo", serif;
   font-size: 40px;
   font-weight: 400;
-  left: 50px;
+  left: 20%;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
@@ -70,21 +95,21 @@
 .login .text-wrapper-2 {
   color: #000000;
   font-family: "Arimo-Regular", Helvetica;
-  font-size: 24px;
-  font-weight: 400;
-  left: 365px;
+  font-size: 18px;
+  /* font-weight: 400; */
+  left: 47%;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 700px;
+  top: 71.45%;
   white-space: nowrap;
 }
 
 .login .remember {
   height: 40px;
-  left: 71px;
+  left: 5%;
   position: absolute;
-  top: 695px;
+  top: 70%;
   width: 216px;
 }
 
@@ -102,22 +127,22 @@
 .login .text-wrapper-3 {
   color: #000000;
   font-family: "Arimo-Regular", Helvetica;
-  font-size: 24px;
-  font-weight: 400;
-  left: 55px;
+  font-size: 18px;
+  /* font-weight: 400; */
+  left: 25%;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 6px;
+  top: 30%;
   white-space: nowrap;
 }
 
 .login .password {
   height: 102px;
-  left: 57px;
+  left: 4%;
   position: absolute;
-  top: 533px;
-  width: 494px;
+  top: 50%;
+  width: 70%;
 }
 
 .login .overlap {
@@ -127,13 +152,33 @@
   left: 0;
   position: absolute;
   top: 28px;
-  width: 490px;
+  width: 100%;
 }
 
 .login .text-wrapper-4 {
-  color: #bdbdbd;
+  position: absolute;
+  left: 8%;
+  top: 35%;
+  border: none;
+  width: 100%; /* Ensure it covers the entire width of the parent container */
+}
+
+.login .text-wrapper-4 input[type="password"] {
+  border: none;
+  font-size: 20px;
+  font-family: "Cambo", serif;
+  /* padding: 2.5%; */
+  background-color: #f2f2f2;
+  width: 85%;
+  outline: none;
+}
+
+/* .login .text-wrapper-4 input[type="password"]{
+  background-color: #f2f2f2;
+  border: none;
+  border-color: #f2f2f2;
   font-family: "Cambo-Regular", Helvetica;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
   left: 26px;
   letter-spacing: 0;
@@ -141,7 +186,7 @@
   position: absolute;
   top: 23px;
   white-space: nowrap;
-}
+} */
 
 .login .text-wrapper-5 {
   color: #000000;
@@ -158,16 +203,16 @@
 
 .login .email-address {
   height: 102px;
-  left: 57px;
+  left: 4%;
   position: absolute;
-  top: 365px;
-  width: 494px;
+  top: 33%;
+  width: 70%;
 }
 
-.login .text-wrapper-6 {
+/* .login .text-wrapper-6 input[type="email"]{
   color: #bdbdbd;
   font-family: "Cambo-Regular", Helvetica;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
   left: 23px;
   letter-spacing: 0;
@@ -175,29 +220,48 @@
   position: absolute;
   top: 24px;
   white-space: nowrap;
+} */
+
+.login .text-wrapper-6 {
+  position: absolute;
+  left: 8%;
+  top: 35%;
+  border: none;
+  width: 100%; /* Ensure it covers the entire width of the parent container */
 }
 
-.login .text-wrapper-7 {
+.login .text-wrapper-6 input[type="email"] {
+  border: none;
+  font-size: 20px;
+  font-family: "Cambo", serif;
+  /* padding: 2.5%; */
+  background-color: #f2f2f2;
+  width: 85%;
+  outline: none;
+}
+
+/* .login .text-wrapper-7 {
   color: #000000;
   font-family: 'Archivo Black', sans-serif;
   font-size: 48px;
   font-weight: 400;
-  left: 10%;
+  left: 6%;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 190px;
+  top: 15%;
   white-space: nowrap;
-}
+} */
 
 .login .text-wrapper-8 {
   color: #000000;
   font-family: 'Kaushan Script', cursive;
-  font-size: 350%;
+  font-size: 60px;
+  left: 5%;
   font-weight: 400;
-  left: 15%;
+  align-items: center;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 2%;
+  top: 10%;
 }

@@ -8,14 +8,16 @@ const Login = () => {
     <div className="login">
       <img className="loginbackground" alt="Loginbackground" src={LoginBackground} />
       
-      <div className="sign-up">
+      <button className="sign-up">
         <div className="overlap-group">
-          <div className="text-wrapper">Sign Up</div>
+          <div className="text-wrapper">
+            Sign Up
+          </div>
         </div>
-      </div>
+      </button>
 
       <button className="login-button">
-        <div className="overlap-group">
+        <div className="overlap-group2">
           <div className="div">Login</div>
         </div>
       </button>
@@ -23,7 +25,7 @@ const Login = () => {
       <div className="text-wrapper-2">Forgot Password</div>
       
       <div className="remember">
-        <div className="rectangle" />
+        <input type="checkbox" className="rectangle" />
         <div className="text-wrapper-3">Remember Me</div>
       </div>
 
@@ -45,7 +47,7 @@ const Login = () => {
         <div className="text-wrapper-5">Email Address</div>
       </div>
 
-      <div className="text-wrapper-7">Good to see you</div>
+      {/* <div className="text-wrapper-7">Good to see you</div> */}
       <div className="text-wrapper-8">CrossConnect</div>
     </div>
   );
