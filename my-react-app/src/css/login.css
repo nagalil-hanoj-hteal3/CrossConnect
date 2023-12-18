@@ -1,6 +1,6 @@
 .login {
   /* background-color: #661515; */
-  height: 100vh;
+  height: 99vh;
   position: relative;
   width: 61%;
   margin-top: -2%;
@@ -8,7 +8,7 @@
 }
 
 .login .loginbackground {
-  height: 101vh;
+  height: 100vh;
   left: 80%;
   object-fit: cover;
   position: absolute;
@@ -193,7 +193,7 @@
   font-family: "Arimo-Regular", Helvetica;
   font-size: 24px;
   font-weight: 400;
-  left: 26px;
+  left: 9%;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
