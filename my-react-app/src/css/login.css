@@ -24,6 +24,7 @@
   top: 85%;
   width: 36%;
   border: none;
+  border-radius: 25px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -39,6 +40,7 @@
   height: 68px;
   position: relative;
   width: 80%;
+  border-radius: 25px;
 }
 
 .login .text-wrapper {
@@ -59,6 +61,7 @@
   height: 70px;
   position: relative;
   width: 100%;
+  border-radius: 25px;
 }
 
 .login .login-button {
@@ -69,6 +72,7 @@
   position: absolute;
   top: 85%;
   width: 32%;
+  border-radius: 25px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
