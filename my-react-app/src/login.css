@@ -2,7 +2,9 @@
   background-color: #661515;
   height: 100vh;
   position: relative;
-  width: 100%;
+  width: 50%;
+  margin-top: -2%;
+  margin-left: -1%;
 }
 
 .login .loginbackground {
@@ -180,7 +182,7 @@
   font-family: 'Archivo Black', sans-serif;
   font-size: 48px;
   font-weight: 400;
-  left: 90px;
+  left: 10%;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
@@ -191,11 +193,11 @@
 .login .text-wrapper-8 {
   color: #000000;
   font-family: 'Kaushan Script', cursive;
-  font-size: 64px;
+  font-size: 350%;
   font-weight: 400;
-  left: 128px;
+  left: 15%;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 21px;
+  top: 2%;
 }
