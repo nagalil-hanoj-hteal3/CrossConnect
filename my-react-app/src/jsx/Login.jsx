@@ -1,7 +1,7 @@
 import React from "react";
-import "./login.css";
+import "../css/login.css";
 // import {Link} from "react-router-dom";
-import LoginBackground from "./assets/LoginBackground.jpg";
+import LoginBackground from "../assets/LoginBackground.jpg";
 
 const Login = () => {
   return (

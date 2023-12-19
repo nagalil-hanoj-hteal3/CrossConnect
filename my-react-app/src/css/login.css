@@ -1,6 +1,6 @@
 .login {
   /* background-color: #661515; */
-  height: 100vh;
+  height: 99vh;
   position: relative;
   width: 61%;
   margin-top: -2%;
@@ -8,7 +8,7 @@
 }
 
 .login .loginbackground {
-  height: 101vh;
+  height: 100vh;
   left: 80%;
   object-fit: cover;
   position: absolute;
@@ -24,6 +24,7 @@
   top: 85%;
   width: 36%;
   border: none;
+  border-radius: 25px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -39,6 +40,7 @@
   height: 68px;
   position: relative;
   width: 80%;
+  border-radius: 25px;
 }
 
 .login .text-wrapper {
@@ -59,6 +61,7 @@
   height: 70px;
   position: relative;
   width: 100%;
+  border-radius: 25px;
 }
 
 .login .login-button {
@@ -69,6 +72,7 @@
   position: absolute;
   top: 85%;
   width: 32%;
+  border-radius: 25px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -193,7 +197,7 @@
   font-family: "Arimo-Regular", Helvetica;
   font-size: 24px;
   font-weight: 400;
-  left: 26px;
+  left: 9%;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
