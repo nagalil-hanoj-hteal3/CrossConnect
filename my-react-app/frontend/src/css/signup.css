@@ -1,37 +1,45 @@
-html, body {
+body, html {
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
-body {
-  background-image: url('../assets/LoginBackground.jpg') ;
-  background-size: cover;
-  background-position: center;
+.signup {
+  background-image: url('../assets/LoginBackground.jpg');
   background-repeat: no-repeat;
+  background-size: cover; /* Set background-size to cover the entire viewport */
+  height: 100vh; /* Set height to 100% of viewport height */
+  margin: 0; /* Remove margin to cover the entire viewport */
+  padding: 0; /* Remove padding to cover the entire viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.container {
+
+.signup .container {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 
-input {
+.signup .input {
   margin-bottom: 15%; 
   padding: 8%;
 }
 
-.input-session {
+.signup .input-session {
+  padding: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 
-.text-wrapper {
-  font-size:150%;
+.signup .text-wrapper {
+  font-size:200%;
   font-family: 'Kaushan Script', cursive;
   padding: 7%;
   display: inline-block; 
@@ -40,7 +48,7 @@ input {
 
 
 
-.sign-up {
+.signup .sign-up {
   display: inline-block;
   padding: 15px 25px;
   font-size: 24px;
@@ -54,10 +62,10 @@ input {
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
+ 
+.signup .sign-up:hover {background-color: #000000}
 
-.sign-up:hover {background-color: #000000}
-
-.sign-up:active {
+.signup .sign-up:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
