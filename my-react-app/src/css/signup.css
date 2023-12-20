@@ -1,35 +1,59 @@
-.signup {
+/* .signup {
     background-color: #ffffff;
-    height: 1024px;
+    height: 100vh;
     position: relative;
     width: 1440px;
-  }
-  
-  .signup .loginbackground {
-    height: 1024px;
-    left: 631px;
-    object-fit: cover;
+} */
+
+.signup .overlap {
+    background-color: #ffcfcf;
+    /* border: 4px solid;
+    border-color: #eeb8b16e; */
+    height: 100%;
+    left: 50%;
     position: absolute;
     top: 0;
-    width: 809px;
-  }
-  
-  .signup .sign-up {
-    align-items: center;
+    width: 50%;
+}
+
+.signup .text-wrapper {
+    color: #000000;
+    font-family: "Cambo", serif;
+    font-size: 24px;
+    font-weight: 400;
+    left: 27%;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-decoration: underline;
+    top: 91%;
+    /* white-space: nowrap; */
+}
+
+.signup .sign-up {
     background-color: #ffd9ed;
     border-radius: 25px;
     display: inline-flex;
     gap: 10px;
     justify-content: center;
-    left: 186px;
-    padding: 14px 28px;
+    border: none;
+    left: 36%;
+    padding: 2% 3%;
     position: absolute;
-    top: 793px;
-  }
-  
-  .signup .text-wrapper {
+    top: 80%;
+
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.signup .sign-up:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.signup .div {
     color: #000000;
-    font-family: "Cambo-Regular", Helvetica;
+    font-family: "Cambo", serif;
     font-size: 40px;
     font-weight: 400;
     letter-spacing: 0;
@@ -38,155 +62,134 @@
     position: relative;
     white-space: nowrap;
     width: fit-content;
-  }
-  
-  .signup .input-session {
-    height: 618px;
-    left: 40px;
+}
+
+.signup .input-session {
+    height: 80%;
+    left: 5%;
     position: absolute;
-    top: 142px;
-    width: 498px;
-  }
-  
-  .signup .password {
-    height: 102px;
-    left: 0;
+    /* background-color: #000000; */
+    top: 14%;
+    width: 85%;
+}
+
+.signup .confirm-password {
+    height: 16.5%;
+    left: 13%;
     position: absolute;
-    top: 387px;
-    width: 494px;
-  }
-  
-  .signup .overlap-group {
+    /* background-color: #000000; */
+    top: 65%;
+    width: 80%;
+}
+
+.signup .overlap-group {
     background-color: #f2f2f2;
     border-radius: 40px;
-    height: 74px;
-    left: 0;
+    height: 50%;
+    left: 0%;
     position: absolute;
-    top: 28px;
-    width: 490px;
-  }
-  
-  .signup .div {
+    top: 27%;
+    width: 100%;
+}
+
+.signup .text-wrapper-2 {
     color: #bdbdbd;
-    font-family: "Cambo-Regular", Helvetica;
+    font-family: "Cambo", serif;
     font-size: 24px;
     font-weight: 400;
-    left: 26px;
+    left: 3%;
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 23px;
+    top: 30%;
     white-space: nowrap;
-  }
-  
-  .signup .text-wrapper-2 {
+}
+
+.signup .text-wrapper-3 {
     color: #000000;
-    font-family: "Arimo-Regular", Helvetica;
+    font-family: "Arimo", Helvetica;
     font-size: 24px;
     font-weight: 400;
-    left: 26px;
+    left: 4%;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
     top: 0;
     white-space: nowrap;
-  }
-  
-  .signup .confirm-password {
-    height: 102px;
-    left: 0;
+}
+
+.signup .password {
+    height: 16.5%;
+    left: 13%;
     position: absolute;
-    top: 516px;
-    width: 494px;
-  }
-  
-  .signup .email {
-    height: 102px;
-    left: 0;
+    /* background-color: #000000; */
+    top: 49%;
+    width: 80%;
+}
+
+.signup .email {
+    height: 16.5%;
+    left: 13%;
     position: absolute;
-    top: 258px;
-    width: 494px;
-  }
-  
-  .signup .text-wrapper-3 {
+    /* background-color: #000000; */
+    top: 33%;
+    width: 80%;
+}
+
+.signup .text-wrapper-4 {
     color: #bdbdbd;
-    font-family: "Cambo-Regular", Helvetica;
+    font-family: "Cambo", serif;
     font-size: 24px;
     font-weight: 400;
-    left: 23px;
+    left: 3%;
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 24px;
+    top: 30%;
     white-space: nowrap;
-  }
-  
-  .signup .user-name {
-    height: 102px;
-    left: 0;
+}
+
+.signup .user-name {
+    height: 16.5%;
+    left: 13%;
     position: absolute;
-    top: 129px;
-    width: 494px;
-  }
-  
-  .signup .full-name {
-    height: 89px;
-    left: 0;
+    /* background-color: #000000; */
+    top: 17%;
+    width: 80%;
+}
+
+.signup .full-name{
+    height: 16.5%;
+    left: 13%;
     position: absolute;
-    top: 0;
-    width: 500px;
-  }
-  
-  .signup .text-wrapper-4 {
+    /* background-color: #000000; */
+    top: 1%;
+    width: 80%;
+}
+
+.signup .text-wrapper-5 {
     color: #000000;
-    font-family: "Arimo-Regular", Helvetica;
-    font-size: 24px;
-    font-weight: 400;
-    left: 13px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    white-space: nowrap;
-  }
-  
-  .signup .frame {
-    align-items: center;
-    border: 1px solid;
-    border-color: #f2f2f2;
-    border-radius: 25px;
-    display: flex;
-    gap: 10px;
-    height: 61px;
-    justify-content: center;
-    left: 0;
-    padding: 10px;
-    position: absolute;
-    top: 28px;
-    width: 498px;
-  }
-  
-  .signup .p {
-    color: #bdbdbd;
-    font-family: "Cambo-Regular", Helvetica;
-    font-size: 24px;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: normal;
-    position: relative;
-    white-space: nowrap;
-    width: fit-content;
-  }
-  
-  .signup .text-wrapper-5 {
-    color: #000000;
-    font-family: "Kaushan Script-Regular", Helvetica;
+    font-family: "Kaushan Script", cursive;
     font-size: 64px;
     font-weight: 400;
-    left: 111px;
+    left: 28%;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 21px;
-  }
-  
+    top: 0%;
+}
+
+.signup .img {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 50%;
+}
