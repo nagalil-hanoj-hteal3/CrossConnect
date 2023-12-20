@@ -1,15 +1,21 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import "../css/login.css";
-// import {Link} from "react-router-dom";
 import LoginBackground from "../assets/LoginBackground.jpg";
 
 const Login = () => {
+  const navigate = useNavigate();
+
+  // Function to handle navigation to the signup page
+  const navigateToSignUp = () => {
+    navigate('/signup'); // Use navigate to go to the signup page
+  };
   return (
     
     <div className="login">
       <img className="loginbackground" alt="Loginbackground" src={LoginBackground} />
       
-      <button className="sign-up">
+      <button className="sign-up" onClick={navigateToSignUp}>
         <div className="overlap-group">
           <div className="text-wrapper">
             Sign Up

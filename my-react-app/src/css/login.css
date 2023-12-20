@@ -8,7 +8,7 @@
 }
 
 .login .loginbackground {
-  height: 100vh;
+  height: 101vh;
   left: 80%;
   object-fit: cover;
   position: absolute;
@@ -161,7 +161,7 @@
 
 .login .text-wrapper-4 {
   position: absolute;
-  left: 8%;
+  left: 4%;
   top: 35%;
   border: none;
   width: 100%; /* Ensure it covers the entire width of the parent container */
@@ -197,7 +197,7 @@
   font-family: "Arimo-Regular", Helvetica;
   font-size: 24px;
   font-weight: 400;
-  left: 9%;
+  left: 4%;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
@@ -228,7 +228,7 @@
 
 .login .text-wrapper-6 {
   position: absolute;
-  left: 8%;
+  left: 4%;
   top: 35%;
   border: none;
   width: 100%; /* Ensure it covers the entire width of the parent container */
