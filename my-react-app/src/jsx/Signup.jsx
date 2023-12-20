@@ -1,27 +1,68 @@
 import React from "react";
 import "../css/signup.css";
-import LoginBackground from "../assets/LoginBackground.jpg";
+import { useNavigate } from 'react-router-dom';
+import SignupBackground from "../assets/SignUp.jpg";
 
+const SignUp = () => {
+    const navigate = useNavigate();
 
-const Signup = () => {
-    return (
-        <div className="signup">
-          <div className="container">
-            <div className="input-session">
-                <div className="text-wrapper">
-                    <h1>CrossConnect</h1>
+    // Function to handle navigation to the signup page
+    const navigateToLogin = () => {
+        navigate('/'); // Use navigate to go to the signup page
+    };
+
+  return (
+<div className="signup">
+    <div className="overlap">
+        <p className="text-wrapper" onClick={navigateToLogin}>Already have an account? Log in</p>
+
+        <button className="sign-up" onClick={navigateToLogin}>
+            <div className="div">Sign Up</div>
+        </button>
+
+        <div className="input-session">
+            <div className="confirm-password">
+                <div className="overlap-group">
+                    <input className="text-wrapper-2" type="password" name="confirmPassword" id="confirmPassword" placeholder="Retype your password"/>
                 </div>
-                <input type="text" name="fullname" id="fullname" placeholder="First name - Last name" />
-                <input type="text" name="username" id="username" placeholder="Create Username" />
-                <input type="email" name="email" id="email" placeholder="Enter your email" />
-                <input type="password" name="password" id="password" placeholder="Create your password" />
-                <input type="password" name="password" id="password" placeholder="Re-enter your password" />
-
-                <button className="sign-up">Sign up</button>
-            </div>
-          </div>
+            <div className="text-wrapper-3">Confirm Password</div>
         </div>
-    );
+
+        <div className="password">
+            <div className="overlap-group">
+                <input className="text-wrapper-2" type="password" name="password" id="password" placeholder="Enter your password"/>
+                {/* </div> */}
+            </div>
+                <div className="text-wrapper-3">Password</div>
+        </div>
+
+        <div className="email">
+            <div className="overlap-group">
+                <input className="text-wrapper-4" type="email" name="email" id="email" placeholder="Enter your email address"/>
+            </div>
+                <div className="text-wrapper-3">Email Address</div>
+        </div>
+
+        <div className="user-name">
+            <div className="overlap-group">
+                <input className="text-wrapper-4" type="text" name="username" id="username" placeholder="Enter Username"/>
+            </div>
+                <div className="text-wrapper-3">Username</div>
+        </div>
+
+        <div className="full-name">
+            <div className="overlap-group">
+                <input className="text-wrapper-4" type="text" name="username" id="username" placeholder="Enter Full Name"/>
+            </div>
+                <div className="text-wrapper-3">Full Name</div>
+            </div>
+        </div>
+
+        <div className="text-wrapper-5">CrossConnect</div>
+    </div>
+    <img className="img" alt="Signup" src={SignupBackground} />
+</div>
+  );
 };
 
-export default Signup;
+export default SignUp;
