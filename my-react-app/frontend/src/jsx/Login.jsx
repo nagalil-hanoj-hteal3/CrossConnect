@@ -8,7 +8,7 @@ const Login = () => {
 
   // Function to handle navigation to the signup page
   const navigateToSignUp = () => {
-    navigate('/signup'); // Use navigate to go to the signup page
+    navigate('/Signup'); // Use navigate to go to the signup page
   };
   return (
     
