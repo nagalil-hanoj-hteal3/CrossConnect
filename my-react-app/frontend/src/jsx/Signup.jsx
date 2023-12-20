@@ -7,17 +7,22 @@ const Signup = () => {
     return (
         <div className="signup">
           <div className="container">
-            <div className="input-session">
-                <div className="text-wrapper">
+          <div className="text-wrapper">
                     <h1>CrossConnect</h1>
-                </div>
-                <input type="text" name="fullname" id="fullname" placeholder="First name - Last name" />
-                <input type="text" name="username" id="username" placeholder="Create Username" />
-                <input type="email" name="email" id="email" placeholder="Enter your email" />
-                <input type="password" name="password" id="password" placeholder="Create your password" />
-                <input type="password" name="password" id="password" placeholder="Re-enter your password" />
+          </div>
+          <div className="input-session">
 
-                <button className="sign-up">Sign up</button>
+              <input type="text" className="input" id="fullname" placeholder="First name - Last name" autoComplete="FName Lname" />
+              
+              <input type="text" className="input" id="username" placeholder="Create Username" />
+
+              <input type="email" className="input" id="email" placeholder="Enter your email" />
+
+              <input type="password" className="input" id="password1" placeholder="Create your password" />
+
+              <input type="password" className="input" id="password2" placeholder="Re-enter your password" />
+
+              <button className="sign-up">Sign up</button>
             </div>
           </div>
         </div>
@@ -25,3 +30,5 @@ const Signup = () => {
 };
 
 export default Signup;
+
+
