@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client'; // Import from react-dom/client
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from '../jsx/Login.jsx';
-import SignUp from '../jsx/SignUp.jsx';
+import SignUp from './SignUp.jsx';
 
 const App = () => {
   return (
