@@ -1,14 +1,26 @@
-import React from "react";
+import React, {useState} from "react";
 import "../css/signup.css";
 import { useNavigate } from 'react-router-dom';
 import SignupBackground from "../assets/SignUp.jpg";
+import eye from "../assets/eye.png";
+import closedEye from "../assets/eye-close.png";
 
 const SignUp = () => {
     const navigate = useNavigate();
+    const [showPassword, setShowPassword] = useState(false);
+    const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
     // Function to handle navigation to the signup page
     const navigateToLogin = () => {
         navigate('/'); // Use navigate to go to the signup page
+    };
+
+    const togglePasswordVisibility = () => {
+        setShowPassword(!showPassword);
+    };
+
+    const toggleConfirmPasswordVisibility = () => {
+        setShowConfirmPassword(!showConfirmPassword);
     };
 
     return (
@@ -23,14 +35,28 @@ const SignUp = () => {
                 <div className="input-session">
                     <div className="confirm-password">
                         <div className="overlap-group">
-                            <input className="text-wrapper-2" type="password" name="confirmPassword" id="confirmPassword" placeholder="Retype your password"/>
+                            <input className="text-wrapper-2" type={showConfirmPassword ? "text" : "password"} name="confirmPassword" id="confirmPassword" placeholder="Retype your password"/>
+                            <div className="eye-icon" onClick={toggleConfirmPasswordVisibility}>
+                                <img
+                                    src={showConfirmPassword ? eye : closedEye}
+                                    alt={showConfirmPassword ? "EyeIcon" : "ClosedEyeIcon"}
+                                    className="eye-img"
+                                />
+                            </div>
                         </div>
                         <div className="text-wrapper-3">Confirm Password</div>
                     </div>
 
                     <div className="password">
                         <div className="overlap-group">
-                            <input className="text-wrapper-2" type="password" name="password" id="password" placeholder="Enter your password"/>
+                            <input className="text-wrapper-2" type={showPassword ? "text" : "password"} name="password" id="password" placeholder="Enter your password"/>
+                            <div className="eye-icon" onClick={togglePasswordVisibility}>
+                                <img
+                                    src={showPassword ? eye : closedEye}
+                                    alt={showPassword ? "EyeIcon" : "ClosedEyeIcon"}
+                                    className="eye-img"
+                                />
+                            </div>
                         </div>
                             <div className="text-wrapper-3">Password</div>
                     </div>
