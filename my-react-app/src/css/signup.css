@@ -30,28 +30,7 @@
     /* white-space: nowrap; */
 }
 
-.signup .sign-up {
-    background-color: #ffd9ed;
-    border-radius: 25px;
-    display: inline-flex;
-    gap: 10px;
-    justify-content: center;
-    border: none;
-    left: 36%;
-    padding: 2% 3%;
-    position: absolute;
-    top: 80%;
-
-    transition: box-shadow 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-.signup .sign-up:hover {
-    transform: scale(1.1);
-    box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.2);
-}
-
-.signup .div {
+.signup .button-container {
     color: #000000;
     font-family: "Cambo", serif;
     font-size: 40px;
@@ -64,12 +43,36 @@
     width: fit-content;
 }
 
+.signup button.sign-up {
+    background-color: #ffd9ed;
+    border-radius: 25px;
+    display: inline-flex;
+    /* gap: 10px; */
+    /* align-items: center; */
+    justify-content: center;
+    border: none;
+    /* margin-left: 36%; */
+    padding: 2% 3%;
+    position: absolute;
+    /* margin-top: 86%; */
+    top: 81%;
+    left: 36%;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* cursor: pointer; */
+}
+
+.signup button.sign-up:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
 .signup .input-session {
-    height: 80%;
+    height: 65%;
     left: 5%;
     position: absolute;
     /* background-color: #000000; */
-    top: 14%;
+    top: 10%;
     width: 85%;
 }
 
@@ -78,7 +81,7 @@
     left: 13%;
     position: absolute;
     /* background-color: #000000; */
-    top: 65%;
+    top: 87%;
     width: 80%;
 }
 
@@ -88,7 +91,7 @@
     height: 50%;
     left: 0%;
     position: absolute;
-    top: 27%;
+    top: 32%;
     width: 100%;
 }
 
@@ -104,7 +107,7 @@
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 30%;
+    top: 20%;
     white-space: nowrap;
 }
 
@@ -117,7 +120,7 @@
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 0;
+    top: 0%;
     white-space: nowrap;
 }
 
@@ -126,7 +129,7 @@
     left: 13%;
     position: absolute;
     /* background-color: #000000; */
-    top: 49%;
+    top: 67%;
     width: 80%;
 }
 
@@ -135,7 +138,7 @@
     left: 13%;
     position: absolute;
     /* background-color: #000000; */
-    top: 33%;
+    top: 47%;
     width: 80%;
 }
 
@@ -151,7 +154,7 @@
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 30%;
+    top: 20%;
     white-space: nowrap;
 }
 
@@ -160,7 +163,7 @@
     left: 13%;
     position: absolute;
     /* background-color: #000000; */
-    top: 17%;
+    top: 27%;
     width: 80%;
 }
 
@@ -169,7 +172,7 @@
     left: 13%;
     position: absolute;
     /* background-color: #000000; */
-    top: 1%;
+    top: 7%;
     width: 80%;
 }
 
