@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import "../css/login.css";
 import LoginBackground from "../assets/LoginBackground.jpg";
+// import leftBackground from "../assets/loginbackground2.jpg";
 import eye from "../assets/eye.png";
 import closedEye from "../assets/eye-close.png";
 
@@ -43,7 +44,7 @@ const Login = () => {
         </div>
 
         <div className="password">
-          <div className="div-wrapper">
+          <div className="div-wrapper2">
             <input className="text-wrapper-4" type={showPassword ? "text" : "password"} name="password" id="password" placeholder="Enter your password"/>
             <div className="eye-icon" onClick={togglePasswordVisibility}>
               <img
