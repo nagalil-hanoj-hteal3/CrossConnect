@@ -162,6 +162,7 @@
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
+  width: 75%;
   top: 30%;
   white-space: nowrap;
 }
@@ -202,6 +203,7 @@
   position: absolute;
   top: 30%;
   white-space: nowrap;
+  width: 90%;
 }
 
 .login .headers {
@@ -238,219 +240,12 @@
   top: 0;
 }
 
-/* .login {
-  height: 99vh;
-  position: relative;
-  width: 61%;
-  margin-top: -2%;
-  margin-left: -1%;
+.login .eye-icon {
+  margin-left: 85%;
+  margin-top: 3%;
 }
 
-.login .loginbackground {
-  height: 101vh;
-  left: 80%;
-  object-fit: cover;
-  position: absolute;
-  width: 87.3%;
+.login .eye-img {
+  width: 80%;
+  /* height: 0%; */
 }
-
-.login .sign-up {
-  height: 70px;
-  background-color: #ffd9ed;
-  left: 41%;
-  position: absolute;
-  top: 85%;
-  width: 25%;
-  border: none;
-  border-radius: 25px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.login .sign-up:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s; 
-  box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.2);
-}
-
-.login .overlap-group {
-  height: 68px;
-  position: relative;
-}
-
-.login .text-wrapper {
-  color: #000000;
-  font-family: "Cambo", serif;
-  font-size: 40px;
-  font-weight: 400;
-  left: 18%;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 17%;
-  white-space: nowrap;
-}
-
-.login .overlap-group2 {
-  background-color: #ffd9ed;
-  height: 70px;
-  position: relative;
-  width: 60%;
-  border-radius: 25px;
-}
-
-.login .login-button {
-  all: unset;
-  box-sizing: border-box;
-  left: 3%;
-  position: absolute;
-  top: 85%;
-  width: 32%;
-  border-radius: 25px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.login .login-button:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s; 
-  box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.2);
-}
-
-.login .div {
-  color: #000000;
-  font-family: "Cambo", serif;
-  font-size: 40px;
-  font-weight: 400;
-  left: 20%;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 17%;
-  white-space: nowrap;
-}
-
-.login .text-wrapper-2 {
-  color: #000000;
-  font-family: "Arimo-Regular", Helvetica;
-  font-size: 18px;
-  left: 47%;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 71.45%;
-  white-space: nowrap;
-}
-
-.login .remember {
-  height: 40px;
-  left: 5%;
-  position: absolute;
-  top: 70%;
-  width: 216px;
-}
-
-.login .rectangle {
-  background-color: #ffffff;
-  border: 2px solid;
-  border-color: #000000;
-  height: 40px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 40px;
-}
-
-.login .text-wrapper-3 {
-  color: #000000;
-  font-family: "Arimo-Regular", Helvetica;
-  font-size: 18px;
-  left: 25%;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 30%;
-  white-space: nowrap;
-}
-
-.login .password {
-  height: 102px;
-  left: 4%;
-  position: absolute;
-  top: 50%;
-  width: 70%;
-}
-
-.login .overlap {
-  background-color: #f2f2f2;
-  border-radius: 40px;
-  height: 74px;
-  left: 0;
-  position: absolute;
-  top: 28px;
-  width: 100%;
-}
-
-.login .text-wrapper-4 {
-  position: absolute;
-  left: 4%;
-  top: 35%;
-  border: none;
-  width: 100%; }
-
-.login .text-wrapper-4 input[type="password"] {
-  border: none;
-  font-size: 20px;
-  font-family: "Cambo", serif;
-  background-color: #f2f2f2;
-  width: 85%;
-  outline: none;
-}
-
-.login .text-wrapper-5 {
-  color: #000000;
-  font-family: "Arimo-Regular", Helvetica;
-  font-size: 24px;
-  font-weight: 400;
-  left: 4%;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 0;
-  white-space: nowrap;
-}
-
-.login .email-address {
-  height: 102px;
-  left: 4%;
-  position: absolute;
-  top: 33%;
-  width: 70%;
-}
-
-.login .text-wrapper-6 {
-  position: absolute;
-  left: 4%;
-  top: 35%;
-  border: none;
-  width: 100%; }
-
-.login .text-wrapper-6 input[type="email"] {
-  border: none;
-  font-size: 20px;
-  font-family: "Cambo", serif;
-  background-color: #f2f2f2;
-  width: 85%;
-  outline: none;
-}
-
-.login .text-wrapper-8 {
-  color: #000000;
-  font-family: 'Kaushan Script', cursive;
-  font-size: 60px;
-  left: 5%;
-  font-weight: 400;
-  align-items: center;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 10%;
-} */

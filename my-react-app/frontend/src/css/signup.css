@@ -88,7 +88,7 @@
 .signup .overlap-group {
     background-color: #f2f2f2;
     border-radius: 40px;
-    height: 50%;
+    height: 63%;
     left: 0%;
     position: absolute;
     top: 32%;
@@ -107,7 +107,7 @@
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 20%;
+    top: 25%;
     white-space: nowrap;
 }
 
@@ -154,7 +154,7 @@
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 20%;
+    top: 25%;
     white-space: nowrap;
 }
 
@@ -195,4 +195,14 @@
     position: absolute;
     top: 0;
     width: 50%;
+}
+
+.signup .eye-icon {
+    margin-left: 85%;
+    margin-top: 0.5%;
+}
+  
+.signup .eye-img {
+    width: 70%;
+    /* height: 0%; */
 }
