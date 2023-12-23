@@ -66,7 +66,7 @@ const Login = () => {
         <form action="" onSubmit={handleSubmit}>
         <div className="password">
           <div className="div-wrapper">
-            <input className="text-wrapper-4" type={showPassword ? "text" : "password"} name="password" id="password" placeholder="Enter your password" onChange={handleInput}></input>
+            <input className="text-wrapper-4" type={showPassword ? "text" : "password"} name="password" id="password" placeholder="Enter your password"/>
             <div className="eye-icon" onClick={togglePasswordVisibility}>
               <img
                 src={showPassword ? eye : closedEye}
