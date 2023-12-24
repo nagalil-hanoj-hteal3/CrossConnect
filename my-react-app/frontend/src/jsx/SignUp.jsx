@@ -10,8 +10,15 @@ const SignUp = () => {
     const [showPassword, setShowPassword] = useState(false);
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
+    const [username, setUsername] = useState('');
+    const [fullName, setFullName] = useState('');
+    const [phone, setPhone] = useState('');
+    const [password, setPassword] = useState('');
+    const [email, setEmail] = useState('');
+
     // Function to handle navigation to the signup page
-    const navigateToLogin = () => {
+    const navigateToLogin = (event) => {
+        event.preventDefault();
         navigate('/'); // Use navigate to go to the signup page
     };
 
@@ -21,36 +28,49 @@ const SignUp = () => {
 
     const toggleConfirmPasswordVisibility = () => {
         setShowConfirmPassword(!showConfirmPassword);
-    };
+    };   
 
-    const handleSignup = async (e) => {
-        e.preventDefault();
-        const formData = new FormData(e.target);
-      
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+    
+        // Collect user input from the form fields
+        // const formData = {
+        //     username: event.target.username.value,
+        //     full_name: event.target.fullName.value,
+        //     email: event.target.email.value,
+        //     phone_number: event.target.phone.value,
+        //     password: event.target.password.value,
+        // };
+    
         try {
-          const response = await fetch('/signup', {
-            method: 'POST',
-            body: formData,
-          });
-      
-          if (response.ok) {
-            // Handle successful signup (redirect or show a success message)
-            navigate('/');
-          } else {
-            // Handle failed signup (show an error message)
-            console.error('Signup failed');
-          }
+            // Make a POST request to your backend
+            const response = await fetch('http://localhost:5173/signup', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(username, fullName, phone, password, email),
+            });
+    
+            if (response.ok) {
+                console.log('User signed up successfully');
+                // Redirect or perform any other actions after successful signup
+            } else {
+                console.error('Error during signup:', response.statusText);
+            }
         } catch (error) {
-          console.error('Error during signup:', error);
+            console.error('Error during signup:', error);
         }
-      };      
+    };
 
     return (
         <div className="signup">
             <div className="overlap">
                 <p className="text-wrapper" onClick={navigateToLogin}>Already have an account? Log in</p>
-                    <form action="/signup" method="post" onClick={handleSignup}>
-                        <button className="sign-up" type="submit">
+                    
+                    {/* <form onSubmit={handleSubmit}> */}
+                        
+                        <button className="sign-up" type="submit" onClick={handleSubmit}>
                             <div className="button-container">Sign Up</div>
                         </button>
                 
@@ -71,7 +91,7 @@ const SignUp = () => {
 
                             <div className="password">
                                 <div className="overlap-group">
-                                    <input className="text-wrapper-2" type={showPassword ? "text" : "password"} name="password" id="password" placeholder="Enter your password"/>
+                                    <input className="text-wrapper-2" type={showPassword ? "text" : "password"} name="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Enter your password"/>
                                     <div className="eye-icon" onClick={togglePasswordVisibility}>
                                         <img
                                             src={showPassword ? eye : closedEye}
@@ -85,33 +105,33 @@ const SignUp = () => {
 
                             <div className="phone">
                                 <div className="overlap-group">
-                                    <input className="text-wrapper-2" type="text" name="phone" id="phone" placeholder="Enter phone number"/>
+                                    <input className="text-wrapper-2" type="text" name="phone" id="phone" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Enter phone number"/>
                                 </div>
                                     <div className="text-wrapper-3">Phone Number</div>
                             </div>
 
                             <div className="email">
                                 <div className="overlap-group">
-                                    <input className="text-wrapper-4" type="email" name="email" id="email" placeholder="Enter your email address"/>
+                                    <input className="text-wrapper-4" type="email" name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter your email address"/>
                                 </div>
                                     <div className="text-wrapper-3">Email Address</div>
                             </div>
 
                             <div className="user-name">
                                 <div className="overlap-group">
-                                    <input className="text-wrapper-4" type="text" name="username" id="username" placeholder="Enter Username"/>
+                                    <input className="text-wrapper-4" type="text" name="username" id="username" value={username} onChange={(e) => setUsername(e.target.value)} placeholder="Enter Username"/>
                                 </div>
                                     <div className="text-wrapper-3">Username</div>
                             </div>
 
                             <div className="full-name">
                                 <div className="overlap-group">
-                                    <input className="text-wrapper-4" type="text" name="fullName" id="fullName" placeholder="Enter Full Name"/>
+                                    <input className="text-wrapper-4" type="text" name="fullName" id="fullName" value={fullName} onChange={(e) => setFullName(e.target.value)} placeholder="Enter Full Name"/>
                                 </div>
                                     <div className="text-wrapper-3">Full Name</div>
                                 </div>
                         </div>
-                    </form>
+                    {/* </form> */}
                     <div className="text-wrapper-5">CrossConnect</div>
             </div>
                 <img className="img" alt="Signup" src={SignupBackground} />

@@ -2,8 +2,8 @@ import { createConnection } from 'mysql';
 
 const db = createConnection({
   host: '127.0.0.1',
-  user: 'user',
-  password: 'CrossConnect!',
+  user: 'root',
+  password: '1276B@ttl3Cr33k!',
   database: 'CrossConnect',
   port: 3306,
 });
@@ -16,4 +16,4 @@ db.connect((err) => {
   }
 });
 
-export default db;
+module.exports = db;
