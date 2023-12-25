@@ -1,9 +1,9 @@
-import { createConnection } from 'mysql';
+const mysql = require('mysql2');
 
-const db = createConnection({
-  host: '127.0.0.1',
-  user: 'root',
-  password: '1276B@ttl3Cr33k!',
+const db = mysql.createConnection({
+  host: 'localhost',
+  user: 'user',
+  password: 'CrossConnect!',
   database: 'CrossConnect',
   port: 3306,
 });

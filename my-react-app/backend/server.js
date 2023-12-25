@@ -4,8 +4,8 @@ const db = require('./database');
 const cors = require('cors');
 
 const app = express();
-// const PORT = process.env.PORT || 5173;
-const PORT = 5173;
+// const PORT = process.env.PORT || 3000;
+// const PORT = 3000;
 
 // app.use(express.json());
 // app.use(express.urlencoded({extended: true }));
@@ -18,7 +18,7 @@ app.use(cors());
 app.post('/signup', (req, res) => {
   console.log('Received signup request:', req.body);
   
-  const { username, full_name, email, phone_number, password } = req.body;
+  const { username, fullName, email, phone, password } = req.body;
 
 //   if (username && full_name && email && phone_number && password) {
 //       try {
@@ -29,7 +29,7 @@ app.post('/signup', (req, res) => {
           // Insert user data into the Users table
         db.query(
             'INSERT INTO Users(username, full_name, email, password_hash, phone_number) VALUES (?, ?, ?, ?, ?)',
-            [username, full_name, email, password, phone_number], 
+            [username, fullName, email, password, phone], 
             (err, result) => {
                 if (err) {
                     console.error('MySQL error:', err);
@@ -53,6 +53,6 @@ app.post('/signup', (req, res) => {
 //   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+app.listen(3000, () => {
+  console.log(`Server is running on http://localhost:3000`);
 });

@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import SignupBackground from "../assets/SignUp.jpg";
 import eye from "../assets/eye.png";
 import closedEye from "../assets/eye-close.png";
+import axios from 'axios';
 
 const SignUp = () => {
     const navigate = useNavigate();
@@ -32,29 +33,21 @@ const SignUp = () => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-    
-        // Collect user input from the form fields
-        // const formData = {
-        //     username: event.target.username.value,
-        //     full_name: event.target.fullName.value,
-        //     email: event.target.email.value,
-        //     phone_number: event.target.phone.value,
-        //     password: event.target.password.value,
-        // };
-    
+
         try {
+            console.log('Submitting form data:', { username, fullName, phone, password, email });
+
             // Make a POST request to your backend
-            const response = await fetch('http://localhost:5173/signup', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(username, fullName, phone, password, email),
+            const response = await axios.post('http://localhost:3000/signup', {
+                username, fullName, email, phone, password
             });
     
-            if (response.ok) {
+            console.log('Response status:', response.status);
+
+            if (response.status === 200) {
                 console.log('User signed up successfully');
                 // Redirect or perform any other actions after successful signup
+                navigate('/');
             } else {
                 console.error('Error during signup:', response.statusText);
             }
