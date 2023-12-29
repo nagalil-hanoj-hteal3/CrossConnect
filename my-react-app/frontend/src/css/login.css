@@ -8,7 +8,8 @@
 }
 
 .login .overlap {
-  background-color: #d9d9d9;
+  background: linear-gradient(180deg, #A1C4C6 7%, #ffeee4 70%);
+  /* background-image: url('../assets/loginbackground2.jpg'); */
   height: 100%;
   left: 0;
   position: absolute;
@@ -26,6 +27,8 @@
   border-radius: 20px;
   background-color: #ffd9ed;
   transition: transform 0.3s, box-shadow 0.3s;
+
+  cursor: pointer;
 }
 
 .login .sign-up:hover {
@@ -40,6 +43,8 @@
   position: relative;
   width: 100%;
   border-radius: 20px;
+
+  cursor: pointer;
 }
 
 .login .text-wrapper {
@@ -117,6 +122,8 @@
   position: absolute;
   top: 0;
   width: 18%;
+
+  cursor: pointer;
 }
 
 .login .text-wrapper-3 {
@@ -150,6 +157,16 @@
   width: 100%;
 }
 
+.login .div-wrapper2 {
+  background-color: white;
+  border-radius: 40px;
+  height: 65%;
+  left: 0;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+
 .login .text-wrapper-4 {
   color: #bdbdbd;
   font-family: "Cambo";
@@ -158,7 +175,7 @@
   left: 5%;
   outline: none;
   border: none;
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
   letter-spacing: 0;
   line-height: normal;
   position: absolute;

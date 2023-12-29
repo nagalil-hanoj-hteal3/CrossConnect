@@ -19,15 +19,21 @@
 .signup .text-wrapper {
     color: #000000;
     font-family: "Cambo", serif;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
-    left: 27%;
+    left: 32%;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
     text-decoration: underline;
-    top: 91%;
+    top: 93%;
     /* white-space: nowrap; */
+    cursor: /*url('/pointer.png'),*/ pointer;
+}
+
+.signup .text-wrapper:hover {
+    color: blue;
+    /* cursor: url('/my-react-app/frontend/src/assets/click.png'); */
 }
 
 .signup .button-container {
@@ -41,22 +47,20 @@
     position: relative;
     white-space: nowrap;
     width: fit-content;
+    /* cursor: pointer; */
 }
 
 .signup button.sign-up {
     background-color: #ffd9ed;
     border-radius: 25px;
     display: inline-flex;
-    /* gap: 10px; */
-    /* align-items: center; */
     justify-content: center;
     border: none;
-    /* margin-left: 36%; */
-    padding: 2% 3%;
+    padding: 1.5% 20%;
     position: absolute;
-    /* margin-top: 86%; */
-    top: 81%;
-    left: 36%;
+    top: 86%;
+    left: 20%;
+    cursor: pointer;
 
     transition: transform 0.3s, box-shadow 0.3s;
     /* cursor: pointer; */
@@ -68,11 +72,11 @@
 }
 
 .signup .input-session {
-    height: 65%;
+    height: 67%;
     left: 5%;
     position: absolute;
     /* background-color: #000000; */
-    top: 10%;
+    top: 12%;
     width: 85%;
 }
 
@@ -81,14 +85,14 @@
     left: 13%;
     position: absolute;
     /* background-color: #000000; */
-    top: 87%;
+    top: 90%;
     width: 80%;
 }
 
 .signup .overlap-group {
     background-color: #f2f2f2;
     border-radius: 40px;
-    height: 63%;
+    height: 55%;
     left: 0%;
     position: absolute;
     top: 32%;
@@ -96,7 +100,7 @@
 }
 
 .signup .text-wrapper-2 {
-    color: #bdbdbd;
+    color: black;
     font-family: "Cambo", serif;
     font-size: 24px;
     font-weight: 400;
@@ -129,21 +133,30 @@
     left: 13%;
     position: absolute;
     /* background-color: #000000; */
-    top: 67%;
+    top: 72%;
     width: 80%;
 }
+
+.signup .phone{
+    height: 16.5%;
+    left: 13%;
+    position: absolute;
+    /* background-color: #000000; */
+    top: 54%;
+    width: 80%;
+  }
 
 .signup .email {
     height: 16.5%;
     left: 13%;
     position: absolute;
     /* background-color: #000000; */
-    top: 47%;
+    top: 36%;
     width: 80%;
 }
 
 .signup .text-wrapper-4 {
-    color: #bdbdbd;
+    color: black;
     font-family: "Cambo", serif;
     font-size: 24px;
     font-weight: 400;
@@ -163,7 +176,7 @@
     left: 13%;
     position: absolute;
     /* background-color: #000000; */
-    top: 27%;
+    top: 18%;
     width: 80%;
 }
 
@@ -172,7 +185,7 @@
     left: 13%;
     position: absolute;
     /* background-color: #000000; */
-    top: 7%;
+    top: 0%;
     width: 80%;
 }
 
@@ -199,10 +212,10 @@
 
 .signup .eye-icon {
     margin-left: 85%;
-    margin-top: 0.5%;
+    margin-top: 0.25%;
 }
   
 .signup .eye-img {
-    width: 70%;
+    width: 60%;
     /* height: 0%; */
 }
